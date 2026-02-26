@@ -1,0 +1,22 @@
+# Zola build output
+public/
+
+# Sass cache (if using Sass)
+.sass-cache/
+
+# Windows
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# Node (if using tools like Tailwind, etc.)
+node_modules/
+dist/
+
+# IDEs
+.vscode/
+.idea/
