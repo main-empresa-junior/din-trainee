@@ -1,0 +1,67 @@
+.navbar {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    p   {
+        font-weight: 800;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        color: white;
+        padding-left: 100px;
+        }
+
+    img {
+        width: 80px;
+        height: auto;
+        padding-top: 6px;
+        }
+
+    }
+
+.logo-uem-badge {
+    background: white;
+    color: var(--primary-blue);
+    font-weight: 800;
+    font-size: 11px;
+    padding: 3px 7px;
+    border-radius: 3px;
+    letter-spacing: 0.08em;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.navbar nav a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 11px;
+    border-radius: 4px;
+    transition: background 0.15s, color 0.15s;
+}
+
+.navbar nav a:hover, .navbar nav a.nav-active {
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
