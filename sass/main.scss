@@ -1,7 +1,7 @@
+@use "layout/hero";
 @use "layout/header";
 @use "layout/footer";
-@use "layout/hero";
-
+@use "layout/courses";
 
 :root {
     --primary-blue: #003366;
@@ -25,6 +25,7 @@ body {
     color: var(--text-dark);
     background: var(--white);
     -webkit-font-smoothing: antialiased;
+
 }
 
 .container {
