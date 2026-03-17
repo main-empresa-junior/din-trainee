@@ -1,20 +1,18 @@
 <header class="navbar">
-    <div class="container">
-        <div class="logo-area">
-            <a href="{{ get_url(path='') }}">
-                <img
-                    src ="{{ get_url(path='images/logo-uem.svg') }}"
-                    alt ="logo uem"
-                />
-            </a>
-            <p>UEM – DIN</p>
-        </div>
+    <a href="{{ get_url(path='') }}">
+        <img
+            src ="{{ get_url(path='images/logo-uem.svg') }}"
+            alt ="logo uem"
+        />
+    </a>
+    <div class="header-container">
+        <p>UEM – DIN</p>
         <nav>
-            <a href="/" class="nav-active">Início</a>
-            <a href="#">Cursos</a>
+            <a href="/">Início</a>
+            <a href="/">Cursos</a>
             <a href="#">Docentes</a>
             <a href="#">Documentação</a>
-            <a href="/login">Portal do Aluno</a>
+            <a href="#">Portal do Aluno</a>
             <a href="#">Portal do Docente</a>
             <a href="#">Admissão</a>
         </nav>

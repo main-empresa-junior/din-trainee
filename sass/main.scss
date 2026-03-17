@@ -25,29 +25,11 @@ body {
     color: var(--text-dark);
     background: var(--white);
     -webkit-font-smoothing: antialiased;
-
 }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 32px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-
-/* ─── RESPONSIVE ───────────────────────────────────── */
-@media (max-width: 768px) {
-    .hero .container { flex-direction: column; }
-    .hero-logo { display: none; }
-    .course-grid { grid-template-columns: 1fr; }
-    .why-grid { grid-template-columns: 1fr 1fr; }
-    .footer-grid { grid-template-columns: 1fr; gap: 28px; }
-    .form-row { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 480px) {
-    .why-grid { grid-template-columns: 1fr; }
-    .form-card { padding: 28px 20px; }
+html {
+    transform: scale(0.8);
+    transform-origin: 0 0;
+    width: 125%;
+    height: 125%;
 }
