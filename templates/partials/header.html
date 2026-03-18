@@ -1,0 +1,29 @@
+<header>
+  <div class="header-top-grid">
+    <div class="logo">
+      <img src="/logo_uem_branco.png" alt="UEM">
+    </div>
+
+    <nav class="nav">
+        <a href="/inicio">Início</a>
+        <a href="/cursos">Cursos</a>
+        <a href="/docentes">Docentes</a>
+        <a href="/documentacao">Documentação</a>
+        <a href="/portal_aluno/">Portal do Aluno</a>
+        <a href="/portal_docente">Portal do Docente</a>
+        <a href="/admissao">Admissão</a>
+    </nav>
+    <div></div>
+  </div>
+
+    <div class="header-sub container">
+        <!-- funciona para seções e páginas -->
+        <h1>{{ section.title | default(value=page.title) }}</h1> 
+
+        {% if section and section.extra.header_subtitle %}
+            <p>{{ section.extra.header_subtitle }}</p>
+        {% elif page and page.extra.header_subtitle %}
+            <p>{{ page.extra.header_subtitle }}</p>
+        {% endif %}
+    </div>
+</header>
