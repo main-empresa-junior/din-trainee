@@ -1,68 +1,36 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - UEM DIN</title>
-    <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
-</head>
-<body>
-    <header class="navbar">
-        <div class="container">
-            <div class="logo-area">
-                <span class="logo-uem-badge">UEM</span>
-                UEM – DIN
-            </div>
-            <nav><a href="/">Início</a></nav>
-        </div>
-    </header>
+{% extends "base.html" %}
 
-    <div class="form-section">
-        <div class="form-card">
-            <h2>Entrar</h2>
-            <p class="form-card-sub">Acesse o portal com suas credenciais institucionais</p>
-            <form>
-                <div class="form-group">
-                    <label>E-mail Institucional</label>
-                    <input type="email" placeholder="exemplo@uem.br">
-                </div>
-                <div class="form-group">
-                    <label>Senha</label>
-                    <input type="password" placeholder="********">
-                </div>
-                <button type="submit" class="btn-submit">Entrar no Sistema</button>
-            </form>
-            <p class="form-footer-text">Não tem conta? <a href="/cadastro">Cadastre-se aqui</a></p>
-        </div>
+{% block title %}Login - UEM DIN{% endblock %}
+
+{% block nav %}
+<nav>
+    <a href="/">Início</a>
+    <a href="/register" class="nav-btn-login">Cadastrar</a>
+</nav>
+{% endblock nav %}
+
+{% block content %}
+<div class="form-section">
+    <div class="form-card">
+        <h2>Entrar</h2>
+        <p class="form-card-sub">Acesse o portal com suas credenciais institucionais</p>
+        <form method="post" action="/login">
+            <div class="form-group">
+                <label for="email">E-mail Institucional</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@uem.br"
+                       pattern="[a-zA-Z0-9._%+\-]+@uem\.br$"
+                       title="Use seu e-mail institucional @uem.br"
+                       required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="********"
+                       minlength="8"
+                       required>
+            </div>
+            <button type="submit" class="btn-submit">Entrar no Sistema</button>
+        </form>
+        <p class="form-footer-text">Não tem conta? <a href="/register">Cadastre-se aqui</a></p>
     </div>
-
-    <footer class="main-footer">
-        <div class="container footer-grid">
-            <div>
-                <h4>Departamento de Informática</h4>
-                <p class="footer-brand-desc">Universidade Estadual de Maringá<br>Formando profissionais desde 1978.</p>
-            </div>
-            <div>
-                <h4>Navegação Rápida</h4>
-                <ul>
-                    <li><a href="/">Início</a></li>
-                    <li><a href="#">Cursos</a></li>
-                    <li><a href="#">Docentes</a></li>
-                    <li><a href="#">Documentação</a></li>
-                    <li><a href="/login">Portal do Aluno</a></li>
-                    <li><a href="#">Portal do Docente</a></li>
-                    <li><a href="#">Admissão</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Contato</h4>
-                <p style="color:rgba(255,255,255,0.6);font-size:13px;line-height:1.8;margin:0;">
-                    Email: coord-cc@uem.br e coord-inf@uem.br<br>
-                    Telefone: 3011-4324
-                </p>
-            </div>
-        </div>
-        <div class="footer-bottom">© 2025 Departamento de Informática – UEM</div>
-    </footer>
-</body>
-</html>
+</div>
+{% endblock content %}
