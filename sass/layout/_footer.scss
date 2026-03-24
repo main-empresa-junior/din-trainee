@@ -1,7 +1,7 @@
 .main-footer{
     display: flex;
-    width: 1920px;
-    padding: 64px 384px;
+    width: 120rem;
+    padding: 4rem 24rem;
     flex-direction: column;
     align-items: flex-start;
     background:  #036;
@@ -9,11 +9,11 @@
 
 .footer-grid{
     display: flex;
-    max-width: 1152px;
-    padding: 0 24px;
+    max-width: 72rem;
+    padding: 0 1.5rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 32px;
+    gap: 2rem;
     align-self: stretch;
 }
 
@@ -21,42 +21,42 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 48px;
+    gap: 3rem;
     align-self: stretch;
 
 }
 
 .footer-desc {
     display: flex;
-    width: 336px;
+    width: 21rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 1rem;
     align-self: stretch;
 
     h4{
         color:  #FFF;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-style: normal;
         font-weight: 600;
-        line-height: 28px;
+        line-height: 1.75rem;
         margin: 0;
     }
 
     p {
         align-self: stretch;
         color: #D1D5DC;
-        font-size:16px;
+        font-size: 1rem;
         font-style: normal;
-        font-weight:400;
-        line-height:24px;
+        font-weight: 400;
+        line-height: 1.5rem;
     }
 
     ul {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 8px;
+        gap: 0.5rem;
         align-self: stretch;
         list-style: none;
         padding: 0;
@@ -68,20 +68,31 @@
         align-items: flex-start;
         align-self: stretch;
 
+        a{
+            color:  #06C;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5rem;
+            text-decoration: none;
+        }
     }
-    li a{
-        color:  #06C;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        text-decoration: none;
+
+    a:hover {
+        filter: brightness(70%);
     }
+
+    a:focus-visible {
+       outline: 3px solid var(--mid-blue);
+       outline-offset: 2px;
+       border-radius: 2px;
+    }
+
 }
 
 .footer-brand{
     display: flex;
-    padding-top: 33px;
+    padding-top: 2.063rem;
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
@@ -90,10 +101,10 @@
     p{
         align-self: stretch;
         color:  #99A1AF;
-        font-size: 16px;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 1.5rem;
         text-align: center;
     }
 }

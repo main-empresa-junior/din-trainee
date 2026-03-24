@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
-    max-width: 1920px;
-    max-height: 64px;
+    max-width: 120rem;
+    max-height: 4rem;
     padding: 0 384px 0 153px;
     align-items: center;
     gap: 141px;
@@ -10,8 +10,8 @@
     z-index: 100;
 
     img {
-        width: 115px;
-        height: 55px;
+        width: 7.188rem;
+        height: 3.438rem;
         flex-shrink: 0;
     }
 
@@ -19,40 +19,45 @@
 
 .header-container {
     display: flex;
-    max-width: 1152px;
-    height: 52px;
-    padding: 16px 24px;
+    max-width: 72rem;
+    height: 3.25rem;
+    padding: 1rem 1.5rem;
     align-items: center;
-    gap: 204px;
+    gap: 12.75rem;
     flex: 1 0 0;
     justify-content: space-between;
 
     p{
         color:  #06C;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 32px;
+        line-height: 2rem;
     }
 
     nav {
         display: flex;
         align-items: flex-start;
-        gap: 30px;
+        gap: 1.875rem;
 
-    }
+        a{
+            color:  #06C;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5rem;
+            text-decoration: none;
 
-    nav a{
-        color:  #06C;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        text-decoration: none;
+        }
 
-    }
+        a:hover {
+            filter: brightness(80%)
+        }
 
-    a:hover {
-        filter: brightness(80%)
+        a:focus-visible {
+           outline: 3px solid var(--mid-blue);
+           outline-offset: 2px;
+           border-radius: 2px;
+        }
     }
 }
