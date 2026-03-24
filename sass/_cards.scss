@@ -24,6 +24,15 @@ body {
     padding: 1rem;
 }
 
+.card-tag {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 0.8rem;
+    color: #0066CC;
+    font-weight: bold;
+}
+
 .card-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -44,4 +53,52 @@ body {
 
 .card a {
     font-weight: 501;
+}
+
+.inner-card {
+    padding: 1rem;          
+    background: #f5f5f5;   
+}
+
+.inner-card h4 {
+    margin: 0 0 0.2rem 0;  /* top right bottom left */
+    color: #003366;
+}
+
+.inner-card p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.portal-container .card-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.portal-container .card-column {
+    gap: 1.25rem;
+}
+
+@media (max-width: 900px) {
+    .portal-container .card-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-btn {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.banner-card {
+    background-color: #E6F0FF;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
 }
