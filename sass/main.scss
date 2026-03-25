@@ -16,6 +16,10 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
+html {
+    font-size: 80%;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;

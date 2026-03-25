@@ -1,13 +1,13 @@
-.main-footer{
+.main-footer {
     display: flex;
-    width: 120rem;
+    width: 100%;
     padding: 4rem 24rem;
     flex-direction: column;
     align-items: flex-start;
-    background:  #036;
+    background: #036;
 }
 
-.footer-grid{
+.footer-grid {
     display: flex;
     max-width: 72rem;
     padding: 0 1.5rem;
@@ -19,25 +19,25 @@
 
 .footer-info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     gap: 3rem;
     align-self: stretch;
-
 }
 
 .footer-desc {
     display: flex;
-    width: 21rem;
+    flex: 1 1 18rem;
+    max-width: 100%;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
     align-self: stretch;
 
-    h4{
-        color:  #FFF;
+    h4 {
+        color: #FFF;
         font-size: 1.25rem;
-        font-style: normal;
         font-weight: 600;
         line-height: 1.75rem;
         margin: 0;
@@ -47,7 +47,6 @@
         align-self: stretch;
         color: #D1D5DC;
         font-size: 1rem;
-        font-style: normal;
         font-weight: 400;
         line-height: 1.5rem;
     }
@@ -62,16 +61,15 @@
         padding: 0;
     }
 
-    li{
+    li {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         align-self: stretch;
 
-        a{
-            color:  #06C;
+        a {
+            color: #06C;
             font-size: 1rem;
-            font-style: normal;
             font-weight: 400;
             line-height: 1.5rem;
             text-decoration: none;
@@ -83,14 +81,13 @@
     }
 
     a:focus-visible {
-       outline: 3px solid var(--mid-blue);
-       outline-offset: 2px;
-       border-radius: 2px;
+        outline: 3px solid var(--mid-blue);
+        outline-offset: 2px;
+        border-radius: 2px;
     }
-
 }
 
-.footer-brand{
+.footer-brand {
     display: flex;
     padding-top: 2.063rem;
     flex-direction: column;
@@ -98,13 +95,24 @@
     align-self: stretch;
     border-top: 1px solid #E0E0E0;
 
-    p{
+    p {
         align-self: stretch;
-        color:  #99A1AF;
+        color: #99A1AF;
         font-size: 1rem;
-        font-style: normal;
         font-weight: 400;
         line-height: 1.5rem;
         text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-footer {
+        padding: 3rem 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-footer {
+        padding: 2.5rem 2rem;
     }
 }
